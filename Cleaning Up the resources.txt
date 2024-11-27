@@ -1,0 +1,9 @@
+Clean Up Resources
+Delete the deployment:
+bash
+
+kubectl delete -f deployment.yaml
+Delete the EKS cluster:
+bash
+Copy code
+eksctl delete cluster --name my-eks-cluster

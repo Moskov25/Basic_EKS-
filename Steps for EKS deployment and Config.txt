@@ -1,0 +1,30 @@
+Create the EKS Cluster:
+
+Use eksctl to create the cluster:
+bash
+
+eksctl create cluster --name my-eks-cluster --region <your-region> --nodes 2
+
+Update kubeconfig:
+
+bash
+
+aws eks --region <your-region> update-kubeconfig --name my-eks-cluster
+
+Verify cluster access:
+
+bash
+Copy code
+kubectl get nodes
+
+
+after yaml deployment 
+and verification
+
+Access the Application
+Note the External IP of the LoadBalancer:
+bash
+Copy code
+kubectl get svc nginx-service
+
+

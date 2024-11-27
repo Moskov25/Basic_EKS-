@@ -1,0 +1,6 @@
+Verify Deployment:
+
+Check pods:
+bash
+Copy code
+kubectl get pods
